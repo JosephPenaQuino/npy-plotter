@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "npyplotter"
+version = "0.1.0"
+description = ""
+authors = ["Joseph P. <joseph.pena@utec.edu.pe>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11"
+pydocstyle = "^6.1.1"
+flake8 = "^5.0.4"
+bandit = "^1.7.4"
+mypy = "^0.982"
+matplotlib = "^3.6.2"
+numpy = "^1.23.4"
+pycodestyle = "^2.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
