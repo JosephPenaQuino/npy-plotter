@@ -60,7 +60,7 @@ def picshow(images: List[np.ndarray], **kwargs):
 
     fig = plt.figure(figsize=(10, 12))
     for i, img in enumerate(images):
-        title_size, title = get_title(
+        _, title = get_title(
             i,
             img,
             images_len,
@@ -75,7 +75,7 @@ def picshow(images: List[np.ndarray], **kwargs):
             title += image_names[i]
 
         # Plot image with its title
-        sub = fig.add_subplot(dims[0], dims[1], i + 1)
+        fig.add_subplot(dims[0], dims[1], i + 1)
         # sub.set_title(title, size=title_size)
         # sub.axis('off')
         if len(img.shape) == 3:
