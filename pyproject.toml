@@ -6,7 +6,7 @@ authors = ["Joseph P. <joseph.pena@utec.edu.pe>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.11"
+python = "3.11.1"
 pydocstyle = "^6.1.1"
 flake8 = "^5.0.4"
 bandit = "^1.7.4"
