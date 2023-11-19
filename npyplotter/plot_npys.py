@@ -20,7 +20,8 @@ def show_multiple(initial, qnt, limits, stats, offset):
         files.append("im_{:04d}.npy".format(initial+i))
     PLOT_NPY.plot(files, limits, stats, offset)
 
-if __name__ == "__main__":
+
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         'initial',
@@ -60,3 +61,7 @@ if __name__ == "__main__":
         stats=args.stats,
         offset=args.offset
         )
+
+
+if __name__ == "__main__":
+    main()

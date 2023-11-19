@@ -1,6 +1,7 @@
 import argparse
 from npyplotter.plot_npy import plot
 
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('img_file_paths', nargs='+')

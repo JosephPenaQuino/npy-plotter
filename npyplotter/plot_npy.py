@@ -130,7 +130,7 @@ def plot(image_paths: List[str], **kwargs):
     plt.show()
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('img_file_paths', nargs='+')
     parser.add_argument(
@@ -153,3 +153,7 @@ if __name__ == "__main__":
         enable_index=not args.no_index,
         default_titles=args.default_titles,
     )
+
+
+if __name__ == "__main__":
+    main()
